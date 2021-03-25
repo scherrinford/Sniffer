@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="442.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ScrollPane layoutY="197.0" prefHeight="200.0" prefWidth="438.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="359.0" prefWidth="737.0">
+               <children>
+                  <ListView fx:id="packetList" prefHeight="359.0" prefWidth="738.0" />
+               </children></AnchorPane>
+        </content>
+      </ScrollPane>
+      <Pane layoutX="3.0" layoutY="397.0" prefHeight="45.0" prefWidth="432.0">
+         <children>
+            <Button layoutX="349.0" layoutY="10.0" mnemonicParsing="false" onAction="#startSniffing" prefHeight="25.0" prefWidth="69.0" text="Start" />
+            <Button layoutX="14.0" layoutY="10.0" mnemonicParsing="false" onAction="#searchDevices" prefHeight="25.0" prefWidth="69.0" text="Search" />
+            <Label fx:id="status" layoutX="112.0" layoutY="14.0" prefHeight="17.0" prefWidth="142.0" />
+         </children>
+      </Pane>
+      <ScrollPane layoutY="23.0" prefHeight="118.0" prefWidth="438.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="158.0" prefWidth="551.0">
+               <children>
+                  <ListView fx:id="devicesList" prefHeight="167.0" prefWidth="678.0" AnchorPane.leftAnchor="-24.0" AnchorPane.rightAnchor="-103.0" AnchorPane.topAnchor="0.0" />
+               </children></AnchorPane>
+        </content>
+      </ScrollPane>
+      <Label layoutX="14.0" layoutY="6.0" prefHeight="17.0" prefWidth="397.0" text="Dostepne urządzenia:" />
+      <Label layoutX="14.0" layoutY="180.0" prefHeight="17.0" prefWidth="397.0" text="Znalezione pakiety:" />
+   </children>
+</Pane>
